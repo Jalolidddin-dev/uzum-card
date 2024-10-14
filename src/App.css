@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card_box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 300px;
+  margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_header img {
+  width: 100%;
+}
+
+.card_header {
+  position: relative;
+}
+
+.product_like {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white !important;
+}
+
+.product_rating {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.product_rating .star {
+  color: gold;
+}
+
+.card_footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_footer .price .old_price {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.basket {
+  border: 1px solid grey;
+  padding: 6px 8px;
+  border-radius: 50%;
+}
+
+.basket_icon {
+  font-size: 28px;
 }
